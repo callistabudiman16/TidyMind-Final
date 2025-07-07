@@ -33,12 +33,14 @@ lib/
 ├── task.dart            # Task model (to/from JSON)
 ├── theme.dart           # ThemeNotifier for light/dark mode
 
-
+---
 
 ![Screenshot 2025-07-06 230731](ss/Screenshot 2025-07-06 230731.png)
 ![Screenshot 2025-07-06 230747](ss/Screenshot 2025-07-06 230747.png)
 ![Screenshot 2025-07-06 230846](ss/Screenshot 2025-07-06 230846.png)
 ![Screenshot 2025-07-06 230855](ss/Screenshot 2025-07-06 230855.png)
+
+---
 
 **### Future Implementation**
 
