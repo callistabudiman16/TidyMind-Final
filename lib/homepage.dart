@@ -53,7 +53,7 @@ class _HomePageState extends State<HomePage> {
     }).toList();
 
     return Scaffold(
-      backgroundColor: Theme.of(context).scaffoldBackgroundColor,
+      backgroundColor: const Color(0xFFF5EFE6),
       appBar: AppBar(
         backgroundColor: const Color(0xFFB3C8B8),
         title: Text(
