@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "602569029888",
+    "project_id": "tidymind-16438",
+    "storage_bucket": "tidymind-16438.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602569029888:android:734a06d62c69e07778dbe5",
+        "android_client_info": {
+          "package_name": "edu.cpp.CS4740.example1.test_1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCoQ2iulMivJH3o4uHUzIrAaDad9ZbmFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:602569029888:android:e0ebe66d8431154f78dbe5",
+        "android_client_info": {
+          "package_name": "tidymind.package"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBCoQ2iulMivJH3o4uHUzIrAaDad9ZbmFw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
