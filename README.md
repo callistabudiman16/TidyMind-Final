@@ -16,6 +16,28 @@ TidyMind is a clean, task-oriented Flutter app that helps users organize daily r
 
 ---
 
+![Screenshot 2025-07-06 230731](ss/Screenshot 2025-07-06 230731.png)
+![Screenshot 2025-07-06 230747](ss/Screenshot 2025-07-06 230747.png)
+![Screenshot 2025-07-06 230846](ss/Screenshot 2025-07-06 230846.png)
+![Screenshot 2025-07-06 230855](ss/Screenshot 2025-07-06 230855.png)
+
+
+**### Future Implementation**
+
+🧠 Smart Features (Planned)
+When user adds a chore like “cook,” the app may suggest:
+“How about trying oatmeal tomorrow morning?”
+
+If user sets “repeat every 7 days,” the app generates upcoming instances.
+
+
+
+👩‍💻 Created by
+Natasha Callista Budiman
+📧 callistabudiman16@github.com
+📍 Cal Poly Pomona | Summer 2025
+“Clear your space. Calm your mind.” 🌱
+
 ### Installation
 
 1. **Clone the repository**
@@ -35,28 +57,8 @@ lib/
 
 ---
 
-![Screenshot 2025-07-06 230731](ss/Screenshot 2025-07-06 230731.png)
-![Screenshot 2025-07-06 230747](ss/Screenshot 2025-07-06 230747.png)
-![Screenshot 2025-07-06 230846](ss/Screenshot 2025-07-06 230846.png)
-![Screenshot 2025-07-06 230855](ss/Screenshot 2025-07-06 230855.png)
-
----
-
-**### Future Implementation**
-
-🧠 Smart Features
-When user adds a chore like “cook,” the app may suggest:
-“How about trying oatmeal tomorrow morning?”
-
-If user sets “repeat every 7 days,” the app generates upcoming instances.
 
 
 
-👩‍💻 Created by
-Natasha Callista Budiman
-📧 callistabudiman16@github.com
-📍 Cal Poly Pomona | Summer 2025
-
-“Clear your space. Calm your mind.” 🌱
 
 
