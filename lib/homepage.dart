@@ -86,7 +86,7 @@ class _HomePageState extends State<HomePage> {
                   Text(
                     DateFormat('EEEE, MMMM d, y').format(selectedDate),
                     style: TextStyle(
-                      fontSize: 24,
+                      fontSize: 25,
                       fontWeight: FontWeight.w500,
                       color: Theme.of(context).colorScheme.onSurface.withOpacity(0.8),
                     ),
@@ -152,9 +152,11 @@ class _HomePageState extends State<HomePage> {
     );
   }
 
-
   Widget buildTaskTile(Task task) {
     return GestureDetector(
+      onTap: () {
+        showTaskDetails(task);
+      },
       onLongPress: () {
         showModalBottomSheet(
           context: context,
@@ -186,7 +188,7 @@ class _HomePageState extends State<HomePage> {
 
                         Navigator.pop(context);
                       }
-                    }
+                    },
                   ),
                   ListTile(
                     leading: const Icon(Icons.delete, color: Colors.red),
@@ -221,7 +223,7 @@ class _HomePageState extends State<HomePage> {
             ),
             onPressed: () {
               setState(() {
-                task.isCompleted = !task.isCompleted; // ✅ Tap to toggle
+                task.isCompleted = !task.isCompleted;
               });
             },
           ),
@@ -229,6 +231,29 @@ class _HomePageState extends State<HomePage> {
       ),
     );
   }
+
+  void showTaskDetails(Task task) {
+    showDialog(
+      context: context,
+      builder: (context) => AlertDialog(
+        title: Text(task.title),
+        content: Text(
+          task.description?.isNotEmpty == true
+              ? task.description!
+              : 'No description provided.',
+          style: const TextStyle(fontSize: 16),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.pop(context),
+            child: const Text('Close'),
+          ),
+        ],
+      ),
+    );
+  }
+
+
 
   void confirmDelete(Task task) {
     showDialog(
