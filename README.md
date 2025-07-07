@@ -33,32 +33,27 @@ If user sets “repeat every 7 days,” the app generates upcoming instances.
 
 ---
 
-Created By
-Natasha Callista Budiman
-📧 callistabudiman16@github.com
-🎓 Cal Poly Pomona | CS4750 | Summer 2025
-
 ### Installation
 
 1. **Clone the repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/TidyMind-Final.git
+git clone https://github.com/callistabudiman16/TidyMind-Final.git
 cd TidyMind-Final
 
 lib/
-├── main.dart            # App entry point & theme setup
-├── authpage.dart        # Firebase login/signup UI
-├── homepage.dart        # Task dashboard (add, delete, filter)
-├── addnewtask.dart      # Create task with repeat options
+├── main.dart            # Theme setup & main function
+├── authpage.dart        # Firebase login/signup
+├── homepage.dart        # Task dashboard (add, delete, settings)
+├── addnewtask.dart      # Create task with description and repeat options
 ├── settings.dart        # Toggle theme & clear tasks
 ├── task.dart            # Task model (to/from JSON)
 ├── theme.dart           # ThemeNotifier for light/dark mode
 
+
 ---
 
-
-
-
-
-
+Created By
+Natasha Callista Budiman
+📧 callistabudiman16@github.com
+🎓 Cal Poly Pomona | CS4750 | Summer 2025
