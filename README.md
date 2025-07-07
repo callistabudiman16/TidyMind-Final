@@ -31,7 +31,7 @@ When user adds a chore like “cook,” the app may suggest:
 
 If user sets “repeat every 7 days,” the app generates upcoming instances.
 
-
+---
 
 👩‍💻 Created by
 Natasha Callista Budiman
