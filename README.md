@@ -20,12 +20,6 @@ Natasha Callista Budiman
 - 🧠 **Smart Suggestions**: Optional contextual task suggestions (not implemented yet)
 - 🧹 **Bulk Delete**: Clear all tasks from Firebase in one tap
 
----
-
-![Screenshot 2025-07-06 230731](ss/Screenshot 2025-07-06 230731.png)
-![Screenshot 2025-07-06 230747](ss/Screenshot 2025-07-06 230747.png)
-![Screenshot 2025-07-06 230846](ss/Screenshot 2025-07-06 230846.png)
-![Screenshot 2025-07-06 230855](ss/Screenshot 2025-07-06 230855.png)
 
 ---
 
