@@ -117,6 +117,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                         repeatedTasks.add(
                           Task(
                             title: _titleController.text.trim(),
+                            description: _descriptionController.text.trim(),
                             dueDate: lastDone,
                           ),
                         );
@@ -125,6 +126,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
                           repeatedTasks.add(
                             Task(
                               title: _titleController.text.trim(),
+                              description: _descriptionController.text.trim(),
                               dueDate: lastDone.add(Duration(days: repeatDays * i)),
                             ),
                           );
