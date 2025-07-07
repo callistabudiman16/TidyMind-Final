@@ -41,7 +41,7 @@ If user sets “repeat every 7 days,” the app generates upcoming instances.
 
 ### Installation
 
-1. **Clone the repository**
+**Clone the repository**
 
 ```bash
 git clone https://github.com/callistabudiman16/TidyMind-Final.git
