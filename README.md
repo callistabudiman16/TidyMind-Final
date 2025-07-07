@@ -21,8 +21,9 @@ TidyMind is a clean, task-oriented Flutter app that helps users organize daily r
 ![Screenshot 2025-07-06 230846](ss/Screenshot 2025-07-06 230846.png)
 ![Screenshot 2025-07-06 230855](ss/Screenshot 2025-07-06 230855.png)
 
+---
 
-**### Future Implementation**
+## Future Implementation
 
 🧠 Smart Features (Planned)
 When user adds a chore like “cook,” the app may suggest:
