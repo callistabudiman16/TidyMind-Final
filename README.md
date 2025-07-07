@@ -22,7 +22,7 @@ TidyMind is a clean, task-oriented Flutter app that helps users organize daily r
 
 ```bash
 git clone https://github.com/YOUR_USERNAME/TidyMind-Final.git
-cd TidyMind-CS4750
+cd TidyMind-Final
 
 lib/
 ├── main.dart            # App entry point & theme setup
@@ -32,3 +32,29 @@ lib/
 ├── settings.dart        # Toggle theme & clear tasks
 ├── task.dart            # Task model (to/from JSON)
 ├── theme.dart           # ThemeNotifier for light/dark mode
+
+![Screenshot 2025-07-06 230731](https://github.com/user-attachments/assets/c8db5af7-7faf-43e0-a65c-7743a8d71ba3)
+![Screenshot 2025-07-06 230747](https://github.com/user-attachments/assets/174cf26f-63c8-42fb-92e3-10c5a82d03e4)
+![Screenshot 2025-07-06 230846](https://github.com/user-attachments/assets/a2581a3e-3325-4223-b160-e9d97680f780)
+![Screenshot 2025-07-06 230855](https://github.com/user-attachments/assets/cbe09697-9696-4821-90b0-afb84c1fc77c)
+
+
+
+**### Future Implementation**
+
+🧠 Smart Features
+When user adds a chore like “cook,” the app may suggest:
+“How about trying oatmeal tomorrow morning?”
+
+If user sets “repeat every 7 days,” the app generates upcoming instances.
+
+
+
+👩‍💻 Created by
+Natasha Callista Budiman
+📧 callistabudiman16@github.com
+📍 Cal Poly Pomona | Summer 2025
+
+“Clear your space. Calm your mind.” 🌱
+
+
