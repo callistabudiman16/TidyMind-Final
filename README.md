@@ -14,7 +14,7 @@ Natasha Callista Budiman
 
 - ✅ **User Authentication** via Firebase (Login & Signup)
 - 📅 **Task Management**: Add tasks with due dates, optional descriptions, and completion toggles
-- 🔁 **Smart Repetition**: Repeat tasks every X days, for Y times
+- 🔁 **Smart Repetition**: Repeat tasks every day Y times
 - ☁️ **Cloud Sync**: Tasks stored per user using Firestore
 - 🌓 **Theme Switching**: Light and dark mode toggle
 - 🧠 **Smart Suggestions**: Optional contextual task suggestions (not implemented yet)
@@ -26,6 +26,8 @@ Natasha Callista Budiman
 ## Future Implementation
 
 🧠 Smart Features (Planned)
+
+
 When user adds a chore like “cook,” the app may suggest:
 “How about trying oatmeal tomorrow morning?”
 
