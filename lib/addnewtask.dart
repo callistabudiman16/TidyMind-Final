@@ -65,7 +65,7 @@ class _AddTaskPageState extends State<AddTaskPage> {
               ),
               const SizedBox(height: 16),
 
-              const Text("Last done on", style: TextStyle(fontWeight: FontWeight.bold)),
+              const Text("Start on", style: TextStyle(fontWeight: FontWeight.bold)),
               const SizedBox(height: 6),
               Row(
                 children: [
