@@ -33,7 +33,7 @@ lib/
 ├── task.dart            # Task model (to/from JSON)
 ├── theme.dart           # ThemeNotifier for light/dark mode
 
-<img src="https://github.com/callistabudiman16/TidyMind-Final/blob/main/ss/Screenshot%202025-07-06%20230731.png" alt="Home">
+<img src="https://github.com/callistabudiman16/TidyMind-Final/blob/main/ss/Screenshot%202025-07-06%20230731.png?raw=true" alt="Home">
 
 
 ![Screenshot 2025-07-06 230747](https://github.com/user-attachments/assets/174cf26f-63c8-42fb-92e3-10c5a82d03e4)
