@@ -33,11 +33,10 @@ If user sets “repeat every 7 days,” the app generates upcoming instances.
 
 ---
 
-👩‍💻 Created by
+Created By
 Natasha Callista Budiman
 📧 callistabudiman16@github.com
-📍 Cal Poly Pomona | Summer 2025
-“Clear your space. Calm your mind.” 🌱
+🎓 Cal Poly Pomona | CS4750 | Summer 2025
 
 ### Installation
 
