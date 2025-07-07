@@ -2,6 +2,12 @@
 
 TidyMind is a clean, task-oriented Flutter app that helps users organize daily responsibilities while keeping mental clarity in focus. Users can add, repeat, check off, and delete tasks, as well as toggle smart suggestions for a personalized experience. All data is securely synced through Firebase.
 
+
+Created By
+Natasha Callista Budiman
+📧 callistabudiman16@github.com
+🎓 Cal Poly Pomona | CS4750 | Summer 2025
+
 ---
 
 ## ✨ Features
@@ -50,10 +56,3 @@ lib/
 ├── task.dart            # Task model (to/from JSON)
 ├── theme.dart           # ThemeNotifier for light/dark mode
 
-
----
-
-Created By
-Natasha Callista Budiman
-📧 callistabudiman16@github.com
-🎓 Cal Poly Pomona | CS4750 | Summer 2025
