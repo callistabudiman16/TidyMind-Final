@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'theme.dart';
 
 class SettingsPage extends StatefulWidget {
@@ -13,7 +15,7 @@ class _SettingsPageState extends State<SettingsPage> {
   bool smartSuggestionsEnabled = true;
   bool darkModeEnabled = false;
 
-  void _confirmClearAllTasks() {
+  void confirmClearAllTasks() {
     showDialog(
       context: context,
       builder: (context) => AlertDialog(
@@ -21,13 +23,31 @@ class _SettingsPageState extends State<SettingsPage> {
         content: const Text('Are you sure you want to delete all tasks?'),
         actions: [
           TextButton(
-            onPressed: () => Navigator.pop(context), // Cancel
+            onPressed: () => Navigator.pop(context),
             child: const Text('Cancel'),
           ),
           TextButton(
-            onPressed: () {
-              // TODO: Implement actual clear logic
-              Navigator.pop(context); // Close dialog
+            onPressed: () async {
+              Navigator.pop(context); // close dialog first
+
+              final uid = FirebaseAuth.instance.currentUser?.uid;
+              if (uid == null) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('User not logged in.')),
+                );
+                return;
+              }
+
+              final tasksRef = FirebaseFirestore.instance
+                  .collection('users')
+                  .doc(uid)
+                  .collection('tasks');
+
+              final snapshot = await tasksRef.get();
+              for (final doc in snapshot.docs) {
+                await doc.reference.delete();
+              }
+
               ScaffoldMessenger.of(context).showSnackBar(
                 const SnackBar(content: Text('All tasks cleared!')),
               );
@@ -58,7 +78,6 @@ class _SettingsPageState extends State<SettingsPage> {
             value: smartSuggestionsEnabled,
             onChanged: (value) {
               setState(() => smartSuggestionsEnabled = value);
-              // TODO: Save to SharedPreferences
             },
           ),
           SwitchListTile(
@@ -72,7 +91,7 @@ class _SettingsPageState extends State<SettingsPage> {
           ListTile(
             leading: const Icon(Icons.delete_forever, color: Colors.red),
             title: const Text('Clear All Tasks', style: TextStyle(color: Colors.red)),
-            onTap: _confirmClearAllTasks,
+            onTap: confirmClearAllTasks,
           ),
         ],
       ),
