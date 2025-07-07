@@ -62,14 +62,19 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           IconButton(
-            onPressed: () {
-              Navigator.push(
+            onPressed: () async {
+              final result = await Navigator.push(
                 context,
                 MaterialPageRoute(builder: (context) => const SettingsPage()),
               );
+
+              if (result == true) {
+                loadFirestoreTasks(); 
+              }
             },
             icon: const Icon(Icons.settings, color: Colors.black),
           ),
+
         ],
       ),
 
