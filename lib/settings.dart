@@ -28,29 +28,38 @@ class _SettingsPageState extends State<SettingsPage> {
           ),
           TextButton(
             onPressed: () async {
-              Navigator.pop(context); // close dialog first
+              Navigator.pop(context); // Close the dialog
+              Navigator.pop(context, true);
 
               final uid = FirebaseAuth.instance.currentUser?.uid;
               if (uid == null) {
                 ScaffoldMessenger.of(context).showSnackBar(
-                  const SnackBar(content: Text('User not logged in.')),
+                  const SnackBar(content: Text('User not logged in')),
                 );
                 return;
               }
 
-              final tasksRef = FirebaseFirestore.instance
-                  .collection('users')
-                  .doc(uid)
-                  .collection('tasks');
+              try {
+                final tasksRef = FirebaseFirestore.instance
+                    .collection('users')
+                    .doc(uid)
+                    .collection('tasks');
 
-              final snapshot = await tasksRef.get();
-              for (final doc in snapshot.docs) {
-                await doc.reference.delete();
+                final snapshot = await tasksRef.get();
+
+                // Delete each task document
+                for (final doc in snapshot.docs) {
+                  await doc.reference.delete();
+                }
+
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(content: Text('All tasks cleared!')),
+                );
+              } catch (e) {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  SnackBar(content: Text('Failed to clear tasks: $e')),
+                );
               }
-
-              ScaffoldMessenger.of(context).showSnackBar(
-                const SnackBar(content: Text('All tasks cleared!')),
-              );
             },
             child: const Text('Clear', style: TextStyle(color: Colors.red)),
           ),
